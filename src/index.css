@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.app{
+  height: 300vh;
+}
+
 .home{
   background-image: url('../src/images/desktop/image-hero.jpg');
   width: 100%;
@@ -38,6 +42,66 @@ code {
   font-weight: 400;
 }
 
+.about{
+  padding: 50px;
+  display: flex;
+}
+.about-container{
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.about-container h1{
+  margin-bottom: 30px;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.about-container h5{
+  color: grey;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+  'Lucida Sans', Arial, sans-serif;
+}
+
+
+.about-details{
+  background-color: white;
+  padding: 50px;
+  z-index: 2;
+  width: 40%;
+}
+
+.image{
+  width: 800px;
+  height: 500px;
+}
+
+
+@media screen and (max-width: 1200px){
+  .about-container{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image{
+    width: 600px;
+    height: 400px;
+  }
+  
+  .about-img{
+    width: 100%;
+  }
+
+  .about-details{
+    width: 100%;
+  }
+}
 
 
 
@@ -55,4 +119,47 @@ code {
     font-size: 40px;
     color: white;
   }
+
+  .about-img{
+    width: 100%;
+  }
+
+  .about-details{
+    width: 100%;
+  }
+
+  .image{
+    width: 500px;
+    height: 300px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .about{
+    padding: 30px;
+    display: flex;
+  }
+
+  .about-img{
+    width: 100%;
+  }
+
+  .about-details{
+    width: 100%;
+  }
+
+  .image{
+    width: 300px;
+    height: 200px;
+  }
+
+  .about-details h1{
+    font-size: 30px;
+  }
+
 }

@@ -1,15 +1,16 @@
 import React from 'react';
-import Pages from './pages/pages';
 import { BrowserRouter } from 'react-router-dom';
-
+import Home from './pages/Home';
+import About from './pages/About';
 
 
 const App = () => {
 
   return(
     <BrowserRouter>
-    <div>
-      <Pages />
+    <div className='app'>
+      <Home />
+      <About />
     </div>
     </BrowserRouter>
   )
