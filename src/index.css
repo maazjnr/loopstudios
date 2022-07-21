@@ -288,6 +288,11 @@ code {
 
 
 @media screen and (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
   .immersive{
     width: 80%;
     height: 30rem;
@@ -500,6 +505,7 @@ code {
 
 @media screen and (max-width: 600px) {
 
+
   .about{
     padding: 30px;
     display: flex;
@@ -524,5 +530,6 @@ code {
      Geneva, Verdana, sans-serif;
      line-height: 40px;
   }
+
 
 }
