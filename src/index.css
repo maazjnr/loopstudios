@@ -23,6 +23,7 @@ code {
   height: 100vh;
   background-position: center;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .immersive{
@@ -45,6 +46,7 @@ code {
 .about{
   padding: 50px;
   display: flex;
+  overflow-x: hidden;
 }
 .about-container{
   display: flex;
@@ -85,6 +87,7 @@ code {
 
 .articles{
   padding: 50px;
+  overflow-x: hidden;
 }
 
 .creation-btn{
@@ -289,7 +292,8 @@ code {
 
 @media screen and (max-width: 768px) {
 
-  body{
+  .app{
+    height: 500vh;
     overflow-x: hidden;
   }
 
@@ -504,7 +508,6 @@ code {
 
 
 @media screen and (max-width: 600px) {
-
 
   .about{
     padding: 30px;
