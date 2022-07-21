@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import AboutImg from '../images/desktop/image-interactive.jpg';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
 
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+
+
     return(
-        <div className="about">
-            <section className="about-container">
+        <div className="about" >
+            <section className="about-container" data-aos="zoom-out">
 
                 <div className="about-img">
                     <img className="image" src={AboutImg} alt='' />
@@ -13,7 +20,7 @@ const About = () => {
 
                 <div className="about-details">
                     <h1>THE LEADER IN  INTERACTIVE VR </h1>
-                    <p>
+                    <p data-aos="fade-left">
                         Founded in 2011, Loopstudios has been producing
                         world-class virtual reality projects for some
                         of the best companies around the globe. Our award
